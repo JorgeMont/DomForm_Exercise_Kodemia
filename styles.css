@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem 0 ;
+}
+
+form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-field input, .input-field select{
+    width: 40%;
+    height: 1.3rem;
+}
+
+.btn{
+    height: 2rem;
+    width: 3rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}

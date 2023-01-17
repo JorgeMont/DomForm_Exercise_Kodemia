@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kodemia Form</title>
+</head>
+<body>
+    <form action="">
+        <!-- First Name -->
+        <div class="field input-field">
+            <label for="userName">Enter your first name:</label>
+            <input type="text" id="userName">
+        </div>
+        <!-- Last Name -->
+        <div class="field input-field">
+            <label for="userLastName">Enter your last name:</label>
+            <input type="text" id="userLastName">
+        </div>
+        <!-- Birthdate -->
+        <div class="field input-field">
+            <label for="birthdate">Enter your birthday:</label>
+            <input type="date" name="birth-date" id="birthdate" >
+        </div>
+        <!-- Gender -->
+        <div class="field">
+            <fieldset id="gender">
+                <legend>Select your gender:</legend>
+            
+                <div>
+                  <input type="radio" id="female" name="gender" value="female"
+                         checked>
+                  <label for="female">Female</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Country  -->
+        <div class="field input-field">
+            <label for="country">Choose your country:</label>
+    
+            <select name="country" id="country">
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="canada">Canada</option>
+                <option value="colombia">Colombia</option>
+            </select>
+        </div>
+
+        <!-- Languages -->
+        <div class="field">
+            <fieldset id="languages">
+                <legend>Which programming languages do you know:</legend>
+            
+                <div>
+                  <input type="checkbox" id="js" name="languages" value="js" class="progLang">
+                  <label for="female">JavaScript</label>
+                </div>
+            
+                <div>
+                  <input type="checkbox" id="python" name="languages" value="python" class="progLang">
+                  <label for="male">Python</label>
+                </div>
+    
+                <div>
+                  <input type="checkbox" id="java" name="languages" value="java" class="progLang">
+                  <label for="female">Java</label>
+                </div>
+            
+                <div>
+                  <input type="checkbox" id="c" name="languages" value="c" class="progLang">
+                  <label for="male">C</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Description -->
+        <div class="field">
+            <label for="desc">Write a description about yourself</label>
+            <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="button" value="Send!" class="btn" id="sendBtn">
+    </form>
+    <script src="./code.js"></script>
+</body>
+</html>
